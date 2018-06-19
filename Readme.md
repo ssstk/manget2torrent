@@ -79,34 +79,15 @@ mongodbPort: 27017,
 
 ```
 
-#### 创建必要的文件夹
-
-在AntColony的两个文件夹：log（日志）和.temp（临时存放种子文件）：
-
-```shell
-mkdir log
-mkdir .temp
-```
   
 #### 启动
 
-启动端口号3000的worker：
+启动manget2torrent ：
 
 ```shell
-node startup worker 3000
+yarn start 
 ```
 
-启动ID为1的male：
-
-```shell
-node startup male 1
-```
-
-启动ID为1的female：
-
-```shell
-node startup female 1
-```
 
 ## 问题
 

@@ -1,27 +1,28 @@
 {
-  "name": "dhtspider",
+  "name": "manget2torrent",
   "version": "0.1.0",
-  "description": "Bittorrent dht network infohash spider, for engiy.com[a bittorrent resource search engine]",
+  "description": "Nonejs 实现获取磁力链接infohash DHT BT网络爬虫 磁力链接解析获取种子 读取信息",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanyang/dhtspider.git"
+    "url": "https://github.com/ssstk/manget2torrent.git"
   },
   "keywords": [
     "bittorrent",
     "dht",
     "spider",
+    "mongodb",
     "crawler"
   ],
-  "author": "Alan Yang",
+  "scripts": {
+    "start": "node index.js",
+  },
+  "author": "Mr.Wang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alanyang/dhtspider/issues"
+    "url": "https://github.com/ssstk/manget2torrent/issues"
   },
-  "homepage": "https://github.com/alanyang/dhtspider#readme",
+  "homepage": "https://github.com/ssstk/manget2torrent#readme",
   "dependencies": {
     "bencode": "^0.9.0",
     "bncode": "^0.5.3",

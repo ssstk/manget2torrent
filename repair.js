@@ -1,20 +1,19 @@
 'use strict';
 
-var fs = require('fs'),
-    path = require('path'),
-    filePath = path.join('last-repair-time.txt'),
-    elasticsearch = require('elasticsearch'),
-    Resource = require('./src/mongodb/product'),
-    moment = require('moment'),
-    client = new elasticsearch.Client({
-        host: '127.0.0.1:9200',
-        log: 'error'
-    });
+const fs = require('fs')
+const path = require('path')
+const filePath = path.join('last-repair-time.txt')
+const elasticsearch = require('elasticsearch')
+const Resource = require('./src/mongodb/product')
+const moment = require('moment')
+const config = require('./config')
+const client = new elasticsearch.Client({
+    host: config.elasticsearchHost,
+    log: 'error'
+})
 
-var createTime = fs.readFileSync(filePath).toString(),
-    count = 0;
-
-
+const createTime = fs.readFileSync(filePath).toString()
+var count = 0;
 
 const run = async() => {
     console.log('start')

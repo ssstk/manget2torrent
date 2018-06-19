@@ -1,6 +1,9 @@
 'use strict'
 const mongoose = require('mongoose')
-const promise = mongoose.connect('127.0.0.1:27000')
+const config = require('../../config')
+const util = require('util')
+const uri = util.format('mongodb://%s:%d', config.mongodbHost, config.mongodbPort)
+const promise = mongoose.connect(uri)
 const moment = require('moment')
 mongoose.Promise = global.Promise;
 const Schema = mongoose.Schema

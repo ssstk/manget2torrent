@@ -1,0 +1,45 @@
+{
+  "name": "dhtspider",
+  "version": "0.1.0",
+  "description": "Bittorrent dht network infohash spider, for engiy.com[a bittorrent resource search engine]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanyang/dhtspider.git"
+  },
+  "keywords": [
+    "bittorrent",
+    "dht",
+    "spider",
+    "crawler"
+  ],
+  "author": "Alan Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanyang/dhtspider/issues"
+  },
+  "homepage": "https://github.com/alanyang/dhtspider#readme",
+  "dependencies": {
+    "bencode": "^0.9.0",
+    "bncode": "^0.5.3",
+    "later": "^1.2.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^4.12.6",
+    "ramda": "^0.25.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "torrent-stream": "^1.0.4"
+  },
+  "devDependencies": {
+    "elasticsearch": "^15.0.0",
+    "fifo": "^2.3.0",
+    "hat": "^0.0.3",
+    "moment": "^2.19.2",
+    "redis": "^2.8.0",
+    "utp": "^0.0.9",
+    "webtorrent": "^0.98.20"
+  }
+}

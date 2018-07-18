@@ -15,7 +15,7 @@
     "crawler"
   ],
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js"
   },
   "author": "Mr.Wang",
   "license": "ISC",
